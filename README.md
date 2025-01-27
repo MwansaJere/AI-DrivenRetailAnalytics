@@ -12,11 +12,6 @@ This project focuses on building an **AI-driven recommendation system** for reta
 - **Market Basket Analysis (MBA)**:
 - FP-Growth algorithm to identify frequent itemsets and generate association rules.
 - Insights on co-purchased items for promotional strategies.
-- **Customer Segmentation**:
-- K-means clustering to group customers based on purchasing behaviors, demographics, and coupon usage.
-- Personalized marketing campaigns tailored to each segment.
-- **Data Visualization**:
-- Heatmaps, bar charts, pie charts, and line graphs for exploratory data analysis (EDA).
 - **Performance Evaluation**:
 - Metrics such as Mean Squared Error (MSE), Click-Through Rate (CTR), and Conversion Rate (CVR).
 - A/B testing to validate the effectiveness of recommendations.
@@ -27,12 +22,10 @@ This project focuses on building an **AI-driven recommendation system** for reta
 - **Programming Languages**: Python
 - **Libraries**:
 - Data Analysis: Pandas, NumPy
-- Visualization: Matplotlib, Seaborn
 - Machine Learning: Scikit-learn
 - Association Rule Mining: Mlxtend
 - **Algorithms**:
 - FP-Growth for MBA
-- K-means for clustering
 - **Development Environment**: Jupyter Notebook
 - **Version Control**: Git
 - **Cloud Platforms (Optional)**: AWS/GCP for scalability (if applicable)
@@ -65,13 +58,11 @@ pip install -r requirements.txt
 1. **Data Preparation**:
 - Place your retail transaction data in the `data/` folder.
 - Ensure the data follows the format specified in the project documentation.
-2. **Run Exploratory Data Analysis**:
-- Open the Jupyter Notebook file and execute the EDA cells to visualize key trends and insights.
-3. **Generate Recommendations**:
+2. **Generate Recommendations**:
 - Run the `recommendation_system.py` script to generate personalized product suggestions.
-4. **Perform Market Basket Analysis**:
+3. **Perform Market Basket Analysis**:
 - Execute the `market_basket_analysis.py` script to discover frequently bought-together items.
-5. **Evaluate Model Performance**:
+4. **Evaluate Model Performance**:
 - Use the evaluation metrics (CTR, CVR, etc.) to assess the effectiveness of recommendations.
 
 ---
@@ -82,9 +73,6 @@ pip install -r requirements.txt
 │ ├── transactions.csv # Retail transaction data
 │ ├── products.csv # Product metadata
 ├── notebooks/
-│ ├── eda.ipynb # Exploratory Data Analysis
-│ ├── clustering.ipynb # Customer segmentation
-├── src/
 │ ├── recommendation_system.py
 │ ├── market_basket_analysis.py
 ├── README.md # Project documentation
